@@ -3,13 +3,13 @@
 require_relative "theme_version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "minima"
-  spec.version       = Minima::VERSION
-  spec.authors       = ["Joel Glovier"]
-  spec.email         = ["jglovier@github.com"]
+  spec.name          = "snakima"
+  spec.version       = "0.1"
+  spec.authors       = ["Space Snake"]
+  spec.email         = ["spcsnkwork@gmail.com"]
 
-  spec.summary       = "A beautiful, minimal theme for Jekyll."
-  spec.homepage      = "https://github.com/jekyll/minima"
+  spec.summary       = "Jekyll theme for my own website based on minima 2.5-stable."
+  spec.homepage      = "https://github.com/spcsnk/jekyll-theme-snakima"
   spec.license       = "MIT"
 
   spec.metadata["plugin_type"] = "theme"
