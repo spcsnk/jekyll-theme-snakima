@@ -31,7 +31,7 @@ show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-minima:
+snakima:
   date_format: "%b %-d, %Y"
 
 # If you want to link only specific pages in your header, uncomment
@@ -40,7 +40,7 @@ minima:
 # - about.html
 
 # Build settings
-theme: minima
+theme: snakima
 
 plugins:
  - jekyll-feed
