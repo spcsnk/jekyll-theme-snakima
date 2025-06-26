@@ -20,6 +20,13 @@
 
   &,
   &:visited {
+    color: $brand-color;
+  }
+}
+
+.site-title-main {
+  &,
+  &:visited {
     color: $title-main-color;
   }
 }
