@@ -1,10 +1,12 @@
+@use "snakima/utilities" as *;
+
 /**
  * Syntax highlighting styles
  */
 .highlight {
   background: #1e1e1e;
   color: $text-color; // base text color
-  @extend %vertical-rhythm;
+  @include vertical-rhythm;
 
   .highlighter-rouge & {
     background: $grey-color-dark;

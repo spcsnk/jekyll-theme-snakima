@@ -1,3 +1,5 @@
+@use "snakima/utilities" as *;
+
 /**
  * Site header
  */
@@ -132,7 +134,7 @@
   @include relative-font-size(0.9375);
   color: $grey-color;
   margin-left: -$spacing-unit * 0.5;
-  @extend %clearfix;
+  @include clearfix;
 }
 
 .footer-col {
