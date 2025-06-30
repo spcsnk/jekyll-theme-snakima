@@ -151,7 +151,6 @@ code {
   @include relative-font-size(0.9375);
   border: 1px solid $grey-color-light;
   border-radius: 3px;
-  background-color: #eef;
 }
 
 code {
@@ -232,23 +231,56 @@ table {
   margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;
-  color: lighten($text-color, 18%);
-  border-collapse: collapse;
+  color: $text-color;
+  border-collapse: separate; // enable rounded corners
+  border-spacing: 0; // remove extra spacing while preserving separate borders
   border: 1px solid $grey-color-light;
+  border-radius: 3px; // adjust radius as desired
+
   tr {
     &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
+      background-color: $grey-color-dark;
     }
   }
-  th, td {
+
+  th,
+  td {
     padding: ($spacing-unit * 0.3333333333) ($spacing-unit * 0.5);
   }
+
   th {
-    background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
+    background-color: $grey-color-dark;
+    border-bottom: 1px solid $grey-color-light;
+
+    // add borders between titles
+    &:not(:last-child) {
+      border-right: 1px solid $grey-color-light;
+    }
   }
+
   td {
-    border: 1px solid $grey-color-light;
+    border-top: 1px solid $grey-color-light;
+    // optional: add vertical borders between columns
+    &:not(:last-child) {
+      border-right: 1px solid $grey-color-light;
+    }
+  }
+
+  // Optional: refine rounded corners on thead and tfoot for precise visual polishing
+  thead tr:first-child {
+    th:first-child {
+      border-top-left-radius: 6px;
+    }
+    th:last-child {
+      border-top-right-radius: 6px;
+    }
+  }
+  tbody tr:last-child {
+    td:first-child {
+      border-bottom-left-radius: 6px;
+    }
+    td:last-child {
+      border-bottom-right-radius: 6px;
+    }
   }
 }

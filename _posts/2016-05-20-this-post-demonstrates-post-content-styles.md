@@ -45,6 +45,43 @@ Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin con
   </body>
 </html>
 ```
+```powershell
+function Invoke-Main {
+    $timer = 120
+    Show-Warning -Header "WARNING" -Text "Через $timer секунд компьютер будет выключен. И не пытайся это обойти!"
+    Start-Sleep -Seconds $timer
+    Start-Process -FilePath 'C:\Windows\System32\shutdown.exe' -ArgumentList "/s /t 0"
+}
+
+function Show-Warning {
+    param (
+        [string] $Header,
+        [string] $Text
+    )
+    Add-Type -AssemblyName System.Windows.Forms
+
+    $notify = New-Object System.Windows.Forms.NotifyIcon
+    $notify.Icon = [System.Drawing.SystemIcons]::Information
+    $notify.Visible = $true
+    $notify.ShowBalloonTip(5000, $Text, $Header, [System.Windows.Forms.ToolTipIcon]::Info)
+
+    Start-Sleep -Seconds 6
+    $notify.Dispose()
+}
+
+Invoke-Main
+```
+```python
+# This is a comment
+import math
+
+def greet(name: str) -> None:
+    print(f"Hello, {name}!")
+
+if __name__ == "__main__":
+    greet("World")
+```
+
 
 
 In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.

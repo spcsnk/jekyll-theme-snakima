@@ -16,8 +16,8 @@ $brand-color:      #9CDCFE !default;
 $title-main-color:      #6A9955 !default;
 
 $grey-color:       #8c8c8c !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color-light: #cacaca !default; // Precomputed 40% lighter
+$grey-color-dark:  #2b2b2b !default; // Precomputed 25% darker
 
 $table-text-align: left !default;
 
