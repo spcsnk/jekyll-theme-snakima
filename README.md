@@ -1,4 +1,8 @@
-# minima
+# Snakima
+
+This is just a small fork of the most popular jekyll theme. Original Minima readme.md
+
+# Minima
 
 *Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
 

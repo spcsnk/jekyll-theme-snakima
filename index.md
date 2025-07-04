@@ -7,3 +7,4 @@
 #
 layout: home
 ---
+This string is contained in index.md. Welcome to snakima!

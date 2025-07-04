@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "snakima"
-  spec.version       = "0.1"
+  spec.version       = Snakima::VERSION
   spec.authors       = ["Space Snake"]
   spec.email         = ["spcsnkwork@gmail.com"]
 
