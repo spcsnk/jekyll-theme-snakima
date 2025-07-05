@@ -1,4 +1,4 @@
-name: Build and Deploy Demo Site
+name: Build and Deploy spsnk-website
 
 on:
   push:
