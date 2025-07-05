@@ -1,8 +1,9 @@
-title: Minima Demo Site
+title: Snakima Demo Site
 author:
   name: GitHub User
   email: your-email@domain.com
 description: >
+  Snakima testing NO 1.
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
@@ -15,8 +16,8 @@ minima:
   show_excerpts: true
 
 # Build settings
-baseurl: /minima
-remote_theme: jekyll/minima
+baseurl: /snakima
+remote_theme: spcsnk/snakima
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
