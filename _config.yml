@@ -16,7 +16,7 @@ minima:
   show_excerpts: true
 
 # Build settings
-baseurl: ""
+baseurl: "jekyll-theme-snakima"
 remote_theme: spcsnk/jekyll-theme-snakima
 plugins:
   - jekyll-feed
