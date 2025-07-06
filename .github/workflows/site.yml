@@ -6,6 +6,8 @@ on:
       - snakima
       - spcsnk-website
   # Run this workflow manually from the Actions tab
+  # or from CLI:
+  # gh workflow run site.yml --ref spcsnk-website
   workflow_dispatch:
 
 jobs:
