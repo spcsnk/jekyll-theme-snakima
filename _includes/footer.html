@@ -3,8 +3,6 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
@@ -14,10 +12,13 @@
             {%- else -%}
               {{ site.title | escape }}
             {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
+          </li>
+          {%- if site.email -%}
+          <li class="obfuscated-content">
+            <span class="link-name"> {{ site.email | escape }} </span>
+            <span class="link-href"> mailto:# </span>
+          </li>
+          {%- endif -%}
         </ul>
       </div>
 
