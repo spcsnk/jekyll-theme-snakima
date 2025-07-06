@@ -1,6 +1,8 @@
 title: Your awesome title
 title_main: Main page titile
 author: GitHub User
+# email and social links support obfuscation through JS. ``[ at ]`` becomes @, ``[ dot ]`` becomes .
+# also ``{ <string> }`` becomes <string>. Because publishing your email in plaintext is freaking scary.
 email: your-email``[ at ]``domain``[ dot ]``com
 description: > # this means to ignore newlines until "twitter_username:"
   Write an awesome description for your new site here. You can edit this
