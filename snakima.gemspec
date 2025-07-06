@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative "theme_version"
+
 Gem::Specification.new do |spec|
   spec.name          = "snakima"
   spec.version       = Snakima::VERSION

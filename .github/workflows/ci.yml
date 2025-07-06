@@ -2,10 +2,10 @@ name: Continuous Integration
 on:
   push:
     branches:
-      - "snakima-main"
+      - "snakima"
   pull_request:
     branches:
-      - "snakima-main"
+      - "snakima"
 jobs:
   build:
     name: "Test with Jekyll ${{ matrix.jekyll }} (Ruby ${{ matrix.ruby }})"
