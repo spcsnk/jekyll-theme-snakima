@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy_demo_site:
+  deploy_site:
     runs-on: "ubuntu-latest"
     env:
       BUNDLE_JOBS: 4
